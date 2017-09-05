@@ -255,7 +255,7 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing test-results">
                         {{range .Summary.Results.fail}}
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                            <h5>{{ .PackageName }}/{{ .TestName }} ({{ .Time }}ms)</h5>
+                            <h5>{{ .TestName }} ({{ .Time }}ms)</h5>
 
                             <input class="mdl-color--grey-600 mdl-color-text--white local-run" value="bazel test {{ .TestName }} --cache_test_results=no --test_output=all"/>
                             <pre>{{ .Output }}</pre>
@@ -277,7 +277,7 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing test-results">
                         {{range .Summary.Results.pass}}
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                            <h5>{{ .PackageName }}/{{ .TestName }} ({{ .Time }}ms)</h5>
+                            <h5>{{ .TestName }} ({{ .Time }}ms)</h5>
                             <pre>{{ .Output }}</pre>
                         </div>
                         {{end}}
@@ -296,7 +296,7 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing test-results">
                         {{range .Summary.Results.skip}}
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                            <h5>{{ .PackageName }}/{{ .TestName }} ({{ .Time }}ms)</h5>
+                            <h5>{{ .TestName }} ({{ .Time }}ms)</h5>
                             <pre>{{ .Output }}</pre>
                         </div>
                         {{end}}
