@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="go/src/pass/go_default_test" tests="1" failures="0" errors="1">
+        <testcase name="go/src/pass/go_default_test" status="run" duration="0">
+        </testcase>
+        <system-out><![CDATA[pass]]></system-out>
+    </testsuite>
+</testsuites>
